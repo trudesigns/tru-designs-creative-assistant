@@ -173,8 +173,8 @@ st.markdown(
         font-weight: 600;
     }}
 
-    /* Make EVERY button Tru Designs pink (includes Generate) */
-    button {{
+    /* App buttons only (Generate, Auto-fill, Downloads, etc.) */
+    [data-testid="stAppViewContainer"] button {{
         background-color: {PINK} !important;
         color: #ffffff !important;
         border: 1px solid {PINK} !important;
@@ -183,8 +183,7 @@ st.markdown(
         font-weight: 600 !important;
     }}
 
-    /* Hover effect for all buttons */
-    button:hover {{
+    [data-testid="stAppViewContainer"] button:hover {{
         background-color: #ff5aa4 !important;
         border-color: #ff5aa4 !important;
         color: #ffffff !important;
@@ -193,6 +192,7 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
 
 # --------------------------------------------------------------------
 # SIDEBAR – MODE PICKER

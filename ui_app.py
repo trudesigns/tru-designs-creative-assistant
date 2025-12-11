@@ -244,7 +244,11 @@ st.markdown(
 
 if mode == "Brand Discovery Summary":
     st.subheader("📝 Brand Discovery Session")
-    st.caption("Turn messy client notes into a clean brand overview.")
+    st.caption(
+        "First pick what you’d like me to generate in the left menu, then paste a brief "
+        "or fill out the intake form below and hit Generate. Voilà — you’ve got an organized "
+        "brand discovery document to start building with."
+    )
 elif mode == "Brand Style Guide":
     st.subheader("🎨 Brand Style Guide Generator")
     st.caption("Get a lite style guide you can refine in Figma / Illustrator.")
